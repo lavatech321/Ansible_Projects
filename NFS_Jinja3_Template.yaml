@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  vars_files:
+    - vars.yaml
+  tasks:
+    - name: "Create exports file"
+      template:
+        src: exports.j2
+        dest: /etc/exports
+...
+
